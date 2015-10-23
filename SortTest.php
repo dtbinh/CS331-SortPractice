@@ -39,10 +39,10 @@ unset($base);
 if ($sortHash != $baseHash) die("Incorrect sort result!\n");
 
 $timeCost = ($endTime - $startTime) * 1000000;
-if ($timeCost >= 10 ) { // >= 10 us
+if ($timeCost >= 1000 ) { // >= 1 ms
   $loopCount = intval($minTimeCost / $timeCost);
 } else { // too fast, need re-evaluate
-  $loopCount = 100000;
+  $loopCount = 20000;
   $startTime = microtime(true);
   for ($i = 0; $i < $loopCount; $i ++) {
     $sort->setList($list);
@@ -51,7 +51,7 @@ if ($timeCost >= 10 ) { // >= 10 us
   $endTime = microtime(true);
 
   $timeCost = ($endTime - $startTime) * 1000000;
-  $loopCount = intval($minTimeCost/$timeCost * 100000);
+  $loopCount = intval($minTimeCost/$timeCost * 20000);
 }
 
 if ($loopCount < 10) $loopCount = 10;
