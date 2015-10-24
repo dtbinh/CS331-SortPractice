@@ -5,8 +5,6 @@ require_once "QuickSort1.php";
 require_once "QuickSort2.php";
 require_once "QuickSort3.php";
 
-if (count($argv) == 2 && $argv[1] == "init") die("init done\n");
-
 // insert | merge | quick1 | quick2 | quick3
 if (count($argv) < 3) die("php sort_test.php <mode> <case file>\n");
 $mode = $argv[1];
