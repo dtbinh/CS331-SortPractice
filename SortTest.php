@@ -22,6 +22,7 @@ switch ($mode) {
   case "quick1": $sort = new QuickSort1(); $sort->setList($list); break;
   case "quick2": $sort = new QuickSort2(); $sort->setList($list); break;
   case "quick3": $sort = new QuickSort3(); $sort->setList($list); break;
+  case "init": die;
   default: die("Invalid sort mode: ".$mode."!\n");
 }
 

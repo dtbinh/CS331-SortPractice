@@ -1,3 +1,6 @@
+# ensure the php is optimized by opcache
+php SortTest.php init
+
 runCmd="php SortTest.php insert $1"
 echo $runCmd
 $runCmd
