@@ -5,6 +5,8 @@ require_once "QuickSort1.php";
 require_once "QuickSort2.php";
 require_once "QuickSort3.php";
 
+if (count($argv) == 2 && $argv[1] == "init") die("init done\n");
+
 // insert | merge | quick1 | quick2 | quick3
 if (count($argv) < 3) die("php sort_test.php <mode> <case file>\n");
 $mode = $argv[1];
@@ -22,7 +24,6 @@ switch ($mode) {
   case "quick1": $sort = new QuickSort1(); $sort->setList($list); break;
   case "quick2": $sort = new QuickSort2(); $sort->setList($list); break;
   case "quick3": $sort = new QuickSort3(); $sort->setList($list); break;
-  case "init": die;
   default: die("Invalid sort mode: ".$mode."!\n");
 }
 
