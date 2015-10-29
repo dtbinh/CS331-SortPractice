@@ -1,9 +1,7 @@
 <?php
 require_once "InsertSort.php";
 require_once "MergeSort.php";
-require_once "QuickSort1.php";
-require_once "QuickSort2.php";
-require_once "QuickSort3.php";
+require_once "QuickSort.php";
 
 // insert | merge | quick1 | quick2 | quick3
 if (count($argv) < 3) die("php sort_test.php <mode> <case file>\n");
@@ -12,70 +10,101 @@ $fname = $argv[2];
 $list = explode(",", file_get_contents($fname));
 
 // initialize
+$listCount = count($list);
 $minLoopCount = 10;
-$minTimeCost = 1*60*1000000; // micro second
+$minTimeCost = 1*60; // second
 $loopCount = 1;
-$sort = null;
-switch ($mode) {
-  case "insert": $sort = new InsertSort(); $sort->setList($list); break;
-  case "merge": $sort = new MergeSort(); $sort->setList($list); break;
-  case "quick1": $sort = new QuickSort1(); $sort->setList($list); break;
-  case "quick2": $sort = new QuickSort2(); $sort->setList($list); break;
-  case "quick3": $sort = new QuickSort3(); $sort->setList($list); break;
-  default: die("Invalid sort mode: ".$mode."!\n");
-}
+$timeCost = 0;
+$sort = createSort($mode);
+if (is_null($sort)) die("Invalid sort mode: ".$mode."!\n");
 
-// evaluate the loop count and test the result
+// Check correctness & get a rough sense of time cost
+$workList = $list;
 $startTime = microtime(true);
-$sort->sort();
+$sort($workList, 0, $listCount - 1);
 $endTime = microtime(true);
-$sortHash = getHash($sort->getList());
+$sortHash = getHash($workList);
 
-$base = new BaseSort();
-$base->setList($list)->sort();
-$baseHash = getHash($base->getList());
-unset($base);
-
+$workList = $list;
+baseSort($workList);
+$baseHash = getHash($workList);
 if ($sortHash != $baseHash) die("Incorrect sort result!\n");
 
-$timeCost = ($endTime - $startTime) * 1000000;
-if ($timeCost >= 1000 ) { // >= 1 ms
+// Calculate a reasonable loopCount
+$timeCost = $endTime - $startTime;
+if ($timeCost >= 0.005) { // >= 5 ms
   $loopCount = intval($minTimeCost / $timeCost);
-} else { // too fast, need re-evaluate
-  $loopCount = 20000;
+} else { // too fast, need re-calculate with more loops
+  $loopCount = 5000;
+  // total time cost
   $startTime = microtime(true);
   for ($i = 0; $i < $loopCount; $i ++) {
-    $sort->setList($list);
-    $sort->sort();
+    $workList = $list;
+    $sort($workList, 0, $listCount - 1);
   }
   $endTime = microtime(true);
+  $totalCost = $endTime - $startTime;
 
-  $timeCost = ($endTime - $startTime) * 1000000;
-  $loopCount = intval($minTimeCost/$timeCost * 20000);
+  // overhead
+  $startTime = microtime(true);
+  for ($i = 0; $i < $loopCount; $i ++) {
+    $workList = $list;
+  }
+  $endTime = microtime(true);
+  $overheadCost = $endTime - $startTime;
+
+  // calculate loop count
+  $timeCost = $totalCost - $overheadCost;
+  $loopCount = intval($minTimeCost/$timeCost * $loopCount);
 }
 
 if ($loopCount < 10) $loopCount = 10;
 
-// Good to go ...
+// Evaluate the performance
 echo "Looping ".$loopCount." times ...";
 $startTime = microtime(true);
 for ($i = 0; $i < $loopCount; $i ++) {
-  $sort->setList($list);
-  $sort->sort();
+  $workList = $list;
+  $sort($workList, 0, $listCount - 1);
 }
 $endTime = microtime(true);
+$totalCost = $endTime - $startTime;
+
+$startTime = microtime(true);
+for ($i = 0; $i < $loopCount; $i ++) {
+  $workList = $list;
+}
+$endTime = microtime(true);
+$overheadCost = $endTime - $startTime;
+
 echo "done\n";
 
 // Calculate results
-$timeCost = ($endTime - $startTime) * 1000000;
-$avgTime = $timeCost/$loopCount;
+$timeCost = ($totalCost - $overheadCost) * 1000; // ms
+$avgTime = $timeCost / $loopCount; // ms
 
-echo "Sort mode:\t".$mode."\n";
-echo "List size:\t".count($list)."\n";
+echo "Sort mode:\t".$sort."\n";
+echo "List size:\t".$listCount."\n";
 echo "Loop count:\t".$loopCount."\n";
-echo "Total time:\t".$timeCost." us\n";
-echo "Avg time:\t".$avgTime." us\n";
+echo "Total time:\t".$timeCost." ms\n";
+echo "Avg time:\t".$avgTime." ms\n";
+
+function createSort($mode) {
+  $sort = null;
+  switch ($mode) {
+    case "insert": $sort = "insertSort"; break;
+    case "merge": $sort = "mergeSort"; break;
+    case "quick1": $sort = "quickSort1"; break;
+    case "quick2": $sort = "quickSort2"; break;
+    case "quick3": $sort = "quickSort3"; break;
+  }
+  return $sort;
+}
 
 function getHash($list) {
   return hash("md5", implode("", $list));
+}
+
+function baseSort(&$list) {
+  sort($list);
 }

@@ -1,48 +1,36 @@
 <?php
-require_once "BaseSort.php";
 
-class MergeSort extends BaseSort {
+function mergeSort(&$list, $indexLow, $indexHigh) {
+  if ($indexLow >= $indexHigh) return;
 
-  public function sort() {
-    $this->sortInternal(0, $this->getCount() - 1);
-    return $this;
-  }
+  $mid = floor(($indexLow + $indexHigh) / 2);
+  mergeSort($list, $indexLow, $mid);
+  mergeSort($list, $mid + 1, $indexHigh);
+  merge($list, $indexLow, $mid, $indexHigh);
+}
 
-  protected function sortInternal($indexLow, $indexHigh) {
-    if ($indexLow >= $indexHigh) return;
+function merge(&$list, $indexLow, $mid, $indexHigh) {
+  $tempList = array();
+  $i = $indexLow; $j = $mid + 1;
 
-    $mid = floor(($indexLow + $indexHigh)/2);
-
-    $this->sortInternal($indexLow, $mid);
-    $this->sortInternal($mid + 1, $indexHigh);
-    $this->merge($indexLow, $mid, $indexHigh);
-  }
-
-  protected function merge($indexLow, $mid, $indexHigh) {
-    $list = &$this->getList();
-    $tempList = array();
-    $i = $indexLow; $j = $mid + 1;
-
-    while (($i <= $mid) && ($j <= $indexHigh)) {
-      if ($list[$i] <= $list[$j]) {
-        $tempList[count($tempList)] = $list[$i];
-        $i ++;
-      } else {
-        $tempList[count($tempList)] = $list[$j];
-        $j ++;
-      }
-    }
-    
-    if ($i > $mid) {
-      for ($k = $j; $k <= $indexHigh; $k ++) $tempList[count($tempList)] = $list[$k];
+  while (($i <= $mid) && ($j <= $indexHigh)) {
+    if ($list[$i] <= $list[$j]) {
+      $tempList[count($tempList)] = $list[$i];
+      $i ++;
     } else {
-      for ($k = $i; $k <= $mid; $k ++) $tempList[count($tempList)] = $list[$k];
+      $tempList[count($tempList)] = $list[$j];
+      $j ++;
     }
+  }
+    
+  if ($i > $mid) {
+    for ($k = $j; $k <= $indexHigh; $k ++) $tempList[count($tempList)] = $list[$k];
+  } else {
+    for ($k = $i; $k <= $mid; $k ++) $tempList[count($tempList)] = $list[$k];
+  }
 
-
-    $ti = 0;
-    for ($k = $indexLow; $k <= $indexHigh; $k ++) {
-      $list[$k] = $tempList[$ti ++];
-    }
+  $ti = 0;
+  for ($k = $indexLow; $k <= $indexHigh; $k ++) {
+    $list[$k] = $tempList[$ti ++];
   }
 }
