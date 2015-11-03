@@ -10,7 +10,7 @@ function quickSort1(&$list, $indexLow, $indexHigh) {
 }
 
 function quickSort2(&$list, $indexLow, $indexHigh) {
-  if (($indexHigh - $indexLow + 1) >= 16) {
+  if (($indexHigh - $indexLow + 1) > 16) {
     quickSort1($list, $indexLow, $indexHigh);
   } else {
     insertSort($list, $indexLow, $indexHigh);
@@ -18,16 +18,8 @@ function quickSort2(&$list, $indexLow, $indexHigh) {
 }
 
 function quickSort3(&$list, $indexLow, $indexHigh) {
-  if (($indexHigh - $indexLow + 1) >= 16) {
-    quickSort3R($list, $indexLow, $indexHigh);
-  } else {
-    insertSort($list, $indexLow, $indexHigh);
-  }
-}
-
-function quickSort3R(&$list, $indexLow, $indexHigh) {
   if ($indexLow < $indexHigh) {
-    selectPivot($list, $indexLow, $indexHigh);
+    if (($indexHigh - $indexLow + 1) >= 16) selectPivot($list, $indexLow, $indexHigh);
     $pivotPosition = partition($list, $indexLow, $indexHigh);
     quickSort3($list, $indexLow, $pivotPosition - 1);
     quickSort3($list, $pivotPosition + 1, $indexHigh);
@@ -39,6 +31,7 @@ function partition(&$list, $indexLow, $indexHigh) {
 
   $replacePosition = $indexLow;
   for ($i = $indexLow + 1;$i <= $indexHigh; $i ++) {
+    addKeyCount();
     if ($list[$i] < $pivotValue) {
       swapValue($list, $i, $replacePosition + 1);
       $replacePosition ++;

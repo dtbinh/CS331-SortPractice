@@ -1,4 +1,5 @@
 <?php
+require_once "KeyCount.php";
 
 function mergeSort(&$list, $indexLow, $indexHigh) {
   if ($indexLow >= $indexHigh) return;
@@ -14,6 +15,7 @@ function merge(&$list, $indexLow, $mid, $indexHigh) {
   $i = $indexLow; $j = $mid + 1;
 
   while (($i <= $mid) && ($j <= $indexHigh)) {
+    addKeyCount();
     if ($list[$i] <= $list[$j]) {
       $tempList[count($tempList)] = $list[$i];
       $i ++;

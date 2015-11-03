@@ -1,0 +1,781 @@
+php SortTest.php insert testCases/perf_2_order.txt show_array
+Looping 4763007 times ...done
+Sort mode:	insertSort
+List size:	4
+Loop count:	4763007
+Total time:	6657.9458713531 ms
+Avg time:	0.0013978450737849 ms
+Original Array:
+{1,2,3,4}
+Sorted Array:
+{1,2,3,4}
+php SortTest.php merge testCases/perf_2_order.txt show_array
+Looping 1167191 times ...done
+Sort mode:	mergeSort
+List size:	4
+Loop count:	1167191
+Total time:	9886.1587047577 ms
+Avg time:	0.0084700436387512 ms
+Original Array:
+{1,2,3,4}
+Sorted Array:
+{1,2,3,4}
+php SortTest.php quick1 testCases/perf_2_order.txt show_array
+Looping 1663779 times ...done
+Sort mode:	quickSort1
+List size:	4
+Loop count:	1663779
+Total time:	9449.8460292816 ms
+Avg time:	0.0056797483495594 ms
+Original Array:
+{1,2,3,4}
+Sorted Array:
+{1,2,3,4}
+php SortTest.php quick2 testCases/perf_2_order.txt show_array
+Looping 6620842 times ...done
+Sort mode:	quickSort2
+List size:	4
+Loop count:	6620842
+Total time:	10674.623012543 ms
+Avg time:	0.001612275751716 ms
+Original Array:
+{1,2,3,4}
+Sorted Array:
+{1,2,3,4}
+php SortTest.php quick3 testCases/perf_2_order.txt show_array
+Looping 1889070 times ...done
+Sort mode:	quickSort3
+List size:	4
+Loop count:	1889070
+Total time:	11255.434989929 ms
+Avg time:	0.0059581884154262 ms
+Original Array:
+{1,2,3,4}
+Sorted Array:
+{1,2,3,4}
+php SortTest.php insert testCases/perf_3_order.txt show_array
+Looping 2995824 times ...done
+Sort mode:	insertSort
+List size:	8
+Loop count:	2995824
+Total time:	7597.6760387421 ms
+Avg time:	0.0025360889153509 ms
+Original Array:
+{1,2,3,4,5,6,7,8}
+Sorted Array:
+{1,2,3,4,5,6,7,8}
+php SortTest.php merge testCases/perf_3_order.txt show_array
+Looping 455000 times ...done
+Sort mode:	mergeSort
+List size:	8
+Loop count:	455000
+Total time:	10024.570941925 ms
+Avg time:	0.022032024048187 ms
+Original Array:
+{1,2,3,4,5,6,7,8}
+Sorted Array:
+{1,2,3,4,5,6,7,8}
+php SortTest.php quick1 testCases/perf_3_order.txt show_array
+Looping 556543 times ...done
+Sort mode:	quickSort1
+List size:	8
+Loop count:	556543
+Total time:	9854.4862270355 ms
+Avg time:	0.017706603491618 ms
+Original Array:
+{1,2,3,4,5,6,7,8}
+Sorted Array:
+{1,2,3,4,5,6,7,8}
+php SortTest.php quick2 testCases/perf_3_order.txt show_array
+Looping 4088214 times ...done
+Sort mode:	quickSort2
+List size:	8
+Loop count:	4088214
+Total time:	11265.271186829 ms
+Avg time:	0.0027555483120083 ms
+Original Array:
+{1,2,3,4,5,6,7,8}
+Sorted Array:
+{1,2,3,4,5,6,7,8}
+php SortTest.php quick3 testCases/perf_3_order.txt show_array
+Looping 552270 times ...done
+Sort mode:	quickSort3
+List size:	8
+Loop count:	552270
+Total time:	9928.6699295044 ms
+Avg time:	0.017977927335369 ms
+Original Array:
+{1,2,3,4,5,6,7,8}
+Sorted Array:
+{1,2,3,4,5,6,7,8}
+php SortTest.php insert testCases/perf_4_order.txt show_array
+Looping 2192240 times ...done
+Sort mode:	insertSort
+List size:	16
+Loop count:	2192240
+Total time:	10679.403066635 ms
+Avg time:	0.0048714570788943 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}
+php SortTest.php merge testCases/perf_4_order.txt show_array
+Looping 179158 times ...done
+Sort mode:	mergeSort
+List size:	16
+Loop count:	179158
+Total time:	9300.0998497009 ms
+Avg time:	0.05191004504237 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}
+php SortTest.php quick1 testCases/perf_4_order.txt show_array
+Looping 183870 times ...done
+Sort mode:	quickSort1
+List size:	16
+Loop count:	183870
+Total time:	10458.070039749 ms
+Avg time:	0.056877522378578 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}
+php SortTest.php quick2 testCases/perf_4_order.txt show_array
+Looping 2095161 times ...done
+Sort mode:	quickSort2
+List size:	16
+Loop count:	2095161
+Total time:	10475.270986557 ms
+Avg time:	0.0049997451205693 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}
+php SortTest.php quick3 testCases/perf_4_order.txt show_array
+Looping 217282 times ...done
+Sort mode:	quickSort3
+List size:	16
+Loop count:	217282
+Total time:	10545.356035233 ms
+Avg time:	0.04853304017467 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}
+php SortTest.php insert testCases/perf_5_order.txt show_array
+Looping 1133090 times ...done
+Sort mode:	insertSort
+List size:	32
+Loop count:	1133090
+Total time:	10433.721780777 ms
+Avg time:	0.0092082021558543 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32}
+php SortTest.php merge testCases/perf_5_order.txt show_array
+Looping 82098 times ...done
+Sort mode:	mergeSort
+List size:	32
+Loop count:	82098
+Total time:	9807.3422908783 ms
+Avg time:	0.11945896722062 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32}
+php SortTest.php quick1 testCases/perf_5_order.txt show_array
+Looping 38833 times ...done
+Sort mode:	quickSort1
+List size:	32
+Loop count:	38833
+Total time:	10181.062936783 ms
+Avg time:	0.26217554494329 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32}
+php SortTest.php quick2 testCases/perf_5_order.txt show_array
+Looping 51498 times ...done
+Sort mode:	quickSort2
+List size:	32
+Loop count:	51498
+Total time:	10384.943962097 ms
+Avg time:	0.20165722867096 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32}
+php SortTest.php quick3 testCases/perf_5_order.txt show_array
+Looping 81892 times ...done
+Sort mode:	quickSort3
+List size:	32
+Loop count:	81892
+Total time:	9464.7691249847 ms
+Avg time:	0.11557623607904 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32}
+php SortTest.php insert testCases/perf_6_order.txt show_array
+Looping 514162 times ...done
+Sort mode:	insertSort
+List size:	64
+Loop count:	514162
+Total time:	9437.1211528778 ms
+Avg time:	0.018354373043667 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php merge testCases/perf_6_order.txt show_array
+Looping 37424 times ...done
+Sort mode:	mergeSort
+List size:	64
+Loop count:	37424
+Total time:	10107.795953751 ms
+Avg time:	0.27008860500616 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick1 testCases/perf_6_order.txt show_array
+Looping 12871 times ...done
+Sort mode:	quickSort1
+List size:	64
+Loop count:	12871
+Total time:	9552.4399280548 ms
+Avg time:	0.74216765815048 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick2 testCases/perf_6_order.txt show_array
+Looping 12886 times ...done
+Sort mode:	quickSort2
+List size:	64
+Loop count:	12886
+Total time:	9557.6701164246 ms
+Avg time:	0.74170961636075 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick3 testCases/perf_6_order.txt show_array
+Looping 35969 times ...done
+Sort mode:	quickSort3
+List size:	64
+Loop count:	35969
+Total time:	9865.4708862305 ms
+Avg time:	0.27427704095834 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php insert testCases/perf_7_order.txt show_array
+Looping 275835 times ...done
+Sort mode:	insertSort
+List size:	128
+Loop count:	275835
+Total time:	10224.973678589 ms
+Avg time:	0.037069166996896 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php merge testCases/perf_7_order.txt show_array
+Looping 16752 times ...done
+Sort mode:	mergeSort
+List size:	128
+Loop count:	16752
+Total time:	10037.456989288 ms
+Avg time:	0.59917961970441 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick1 testCases/perf_7_order.txt show_array
+Looping 3716 times ...done
+Sort mode:	quickSort1
+List size:	128
+Loop count:	3716
+Total time:	10822.627782822 ms
+Avg time:	2.9124401998982 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick2 testCases/perf_7_order.txt show_array
+Looping 3170 times ...done
+Sort mode:	quickSort2
+List size:	128
+Loop count:	3170
+Total time:	9225.3251075745 ms
+Avg time:	2.9101971948184 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick3 testCases/perf_7_order.txt show_array
+Looping 15598 times ...done
+Sort mode:	quickSort3
+List size:	128
+Loop count:	15598
+Total time:	9891.15858078 ms
+Avg time:	0.6341299256815 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php insert testCases/perf_8_order.txt show_array
+Looping 137579 times ...done
+Sort mode:	insertSort
+List size:	256
+Loop count:	137579
+Total time:	10289.795160294 ms
+Avg time:	0.0747919025454 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php merge testCases/perf_8_order.txt show_array
+Looping 7260 times ...done
+Sort mode:	mergeSort
+List size:	256
+Loop count:	7260
+Total time:	9917.9389476776 ms
+Avg time:	1.3661072930685 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick1 testCases/perf_8_order.txt show_array
+Looping 898 times ...done
+Sort mode:	quickSort1
+List size:	256
+Loop count:	898
+Total time:	10244.364976883 ms
+Avg time:	11.407978816128 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick2 testCases/perf_8_order.txt show_array
+Looping 905 times ...done
+Sort mode:	quickSort2
+List size:	256
+Loop count:	905
+Total time:	10483.468055725 ms
+Avg time:	11.583942603011 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick3 testCases/perf_8_order.txt show_array
+Looping 7002 times ...done
+Sort mode:	quickSort3
+List size:	256
+Loop count:	7002
+Total time:	10222.02372551 ms
+Avg time:	1.4598719973593 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php insert testCases/perf_9_order.txt show_array
+Looping 67540 times ...done
+Sort mode:	insertSort
+List size:	512
+Loop count:	67540
+Total time:	10123.159885406 ms
+Avg time:	0.14988391894294 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php merge testCases/perf_9_order.txt show_array
+Looping 3552 times ...done
+Sort mode:	mergeSort
+List size:	512
+Loop count:	3552
+Total time:	10494.208097458 ms
+Avg time:	2.9544504778879 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick1 testCases/perf_9_order.txt show_array
+Looping 206 times ...done
+Sort mode:	quickSort1
+List size:	512
+Loop count:	206
+Total time:	9441.379070282 ms
+Avg time:	45.831937234379 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick2 testCases/perf_9_order.txt show_array
+Looping 213 times ...done
+Sort mode:	quickSort2
+List size:	512
+Loop count:	213
+Total time:	9672.1439361572 ms
+Avg time:	45.409126460832 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick3 testCases/perf_9_order.txt show_array
+Looping 3160 times ...done
+Sort mode:	quickSort3
+List size:	512
+Loop count:	3160
+Total time:	10385.957717896 ms
+Avg time:	3.2866954803467 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php insert testCases/perf_10_order.txt show_array
+Looping 33159 times ...done
+Sort mode:	insertSort
+List size:	1024
+Loop count:	33159
+Total time:	10253.920793533 ms
+Avg time:	0.30923492245042 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php merge testCases/perf_10_order.txt show_array
+Looping 1653 times ...done
+Sort mode:	mergeSort
+List size:	1024
+Loop count:	1653
+Total time:	10767.730951309 ms
+Avg time:	6.5140538120443 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick1 testCases/perf_10_order.txt show_array
+Looping 53 times ...done
+Sort mode:	quickSort1
+List size:	1024
+Loop count:	53
+Total time:	9811.5758895874 ms
+Avg time:	185.12407338844 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick2 testCases/perf_10_order.txt show_array
+Looping 47 times ...done
+Sort mode:	quickSort2
+List size:	1024
+Loop count:	47
+Total time:	8503.3571720123 ms
+Avg time:	180.92249302154 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick3 testCases/perf_10_order.txt show_array
+Looping 1432 times ...done
+Sort mode:	quickSort3
+List size:	1024
+Loop count:	1432
+Total time:	10517.557859421 ms
+Avg time:	7.3446633096514 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php insert testCases/perf_11_order.txt show_array
+Looping 16321 times ...done
+Sort mode:	insertSort
+List size:	2048
+Loop count:	16321
+Total time:	10115.709066391 ms
+Avg time:	0.61979713659647 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php merge testCases/perf_11_order.txt show_array
+Looping 742 times ...done
+Sort mode:	mergeSort
+List size:	2048
+Loop count:	742
+Total time:	10424.203157425 ms
+Avg time:	14.048791317284 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick1 testCases/perf_11_order.txt show_array
+Looping 12 times ...done
+Sort mode:	quickSort1
+List size:	2048
+Loop count:	12
+Total time:	9042.4072742462 ms
+Avg time:	753.53393952052 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick2 testCases/perf_11_order.txt show_array
+Looping 11 times ...done
+Sort mode:	quickSort2
+List size:	2048
+Loop count:	11
+Total time:	8103.579044342 ms
+Avg time:	736.68900403109 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick3 testCases/perf_11_order.txt show_array
+Looping 666 times ...done
+Sort mode:	quickSort3
+List size:	2048
+Loop count:	666
+Total time:	10794.195175171 ms
+Avg time:	16.207500263019 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php insert testCases/perf_12_order.txt show_array
+Looping 7866 times ...done
+Sort mode:	insertSort
+List size:	4096
+Loop count:	7866
+Total time:	10253.560781479 ms
+Avg time:	1.3035292119856 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php merge testCases/perf_12_order.txt show_array
+Looping 326 times ...done
+Sort mode:	mergeSort
+List size:	4096
+Loop count:	326
+Total time:	9959.7702026367 ms
+Avg time:	30.551442339376 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick1 testCases/perf_12_order.txt show_array
+Looping 3 times ...done
+Sort mode:	quickSort1
+List size:	4096
+Loop count:	3
+Total time:	9132.3299407959 ms
+Avg time:	3044.1099802653 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick2 testCases/perf_12_order.txt show_array
+Looping 3 times ...done
+Sort mode:	quickSort2
+List size:	4096
+Loop count:	3
+Total time:	8728.1699180603 ms
+Avg time:	2909.3899726868 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick3 testCases/perf_12_order.txt show_array
+Looping 277 times ...done
+Sort mode:	quickSort3
+List size:	4096
+Loop count:	277
+Total time:	9543.4999465942 ms
+Avg time:	34.453068399257 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php insert testCases/perf_13_order.txt show_array
+Looping 2883 times ...done
+Sort mode:	insertSort
+List size:	8192
+Loop count:	2883
+Total time:	7821.1658000946 ms
+Avg time:	2.7128566771053 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php merge testCases/perf_13_order.txt show_array
+Looping 152 times ...done
+Sort mode:	mergeSort
+List size:	8192
+Loop count:	152
+Total time:	9912.5142097473 ms
+Avg time:	65.213909274653 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick1 testCases/perf_13_order.txt show_array
+Sort mode:	quickSort1
+List size:	8192
+Loop count:	1
+Total time:	11732.784986496 ms
+Avg time:	11732.784986496 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick2 testCases/perf_13_order.txt show_array
+Sort mode:	quickSort2
+List size:	8192
+Loop count:	1
+Total time:	11738.102912903 ms
+Avg time:	11738.102912903 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick3 testCases/perf_13_order.txt show_array
+Looping 132 times ...done
+Sort mode:	quickSort3
+List size:	8192
+Loop count:	132
+Total time:	10206.022024155 ms
+Avg time:	77.318348667838 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php insert testCases/perf_14_order.txt show_array
+Looping 1424 times ...done
+Sort mode:	insertSort
+List size:	16384
+Loop count:	1424
+Total time:	8404.1860103607 ms
+Avg time:	5.9018160185117 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php merge testCases/perf_14_order.txt show_array
+Looping 71 times ...done
+Sort mode:	mergeSort
+List size:	16384
+Loop count:	71
+Total time:	10012.50910759 ms
+Avg time:	141.02125503647 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick1 testCases/perf_14_order.txt show_array
+Sort mode:	quickSort1
+List size:	16384
+Loop count:	1
+Total time:	58826.323032379 ms
+Avg time:	58826.323032379 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick2 testCases/perf_14_order.txt show_array
+Sort mode:	quickSort2
+List size:	16384
+Loop count:	1
+Total time:	48507.201194763 ms
+Avg time:	48507.201194763 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick3 testCases/perf_14_order.txt show_array
+Looping 59 times ...done
+Sort mode:	quickSort3
+List size:	16384
+Loop count:	59
+Total time:	9842.010974884 ms
+Avg time:	166.81374533702 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php insert testCases/perf_15_order.txt show_array
+Looping 862 times ...done
+Sort mode:	insertSort
+List size:	32768
+Loop count:	862
+Total time:	10881.622076035 ms
+Avg time:	12.62369150352 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php merge testCases/perf_15_order.txt show_array
+Looping 32 times ...done
+Sort mode:	mergeSort
+List size:	32768
+Loop count:	32
+Total time:	9559.5409870148 ms
+Avg time:	298.73565584421 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick1 testCases/perf_15_order.txt show_array
+php SortTest.php quick2 testCases/perf_15_order.txt show_array
+php SortTest.php quick3 testCases/perf_15_order.txt show_array
+Looping 27 times ...done
+Sort mode:	quickSort3
+List size:	32768
+Loop count:	27
+Total time:	9708.8470458984 ms
+Avg time:	359.58692762587 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php insert testCases/perf_16_order.txt show_array
+Looping 450 times ...done
+Sort mode:	insertSort
+List size:	65536
+Loop count:	450
+Total time:	11012.48884201 ms
+Avg time:	24.47219742669 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php merge testCases/perf_16_order.txt show_array
+Looping 15 times ...done
+Sort mode:	mergeSort
+List size:	65536
+Loop count:	15
+Total time:	9845.5638885498 ms
+Avg time:	656.37092590332 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+php SortTest.php quick1 testCases/perf_16_order.txt show_array
+php SortTest.php quick2 testCases/perf_16_order.txt show_array
+php SortTest.php quick3 testCases/perf_16_order.txt show_array
+Looping 13 times ...done
+Sort mode:	quickSort3
+List size:	65536
+Loop count:	13
+Total time:	9913.9821529388 ms
+Avg time:	762.61401176453 ms
+Original Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
+Sorted Array:
+{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,3...}
